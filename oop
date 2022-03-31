@@ -23,14 +23,32 @@ class Person:
     def __str__(self):
         return self.meno + " ma unavu: " + str(self.unava)
 """
+import random
 
+nieco = ""
 class Auto:
     def __init__(self, spz, farba):
         self.spz = spz
         self.farba = farba
+
+    def zaparkuj(self):
+        global nieco
+        nieco = "zaparkovane"
         
-    def zaparkuj(self, garaz):
-        
-        
+Auto1 = Auto("ZA123AA")
+Auto2 = Auto("ZA963BB")
+Auto3 = Auto("ZA789CC")
+Auto1.zaparkuj()
+Auta = (Auto1, Auto2, Auto3)
+
+randomnieco = random.choice(auta)
+
+x = []
+if nieco != "":
+    x.append(randomnieco.spz)
+    x.append(randomnieco.farba)
+
+
 class Garaz:
     def __init__(self):
+        return f"v garazi je auto{x[0]}"
