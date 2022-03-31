@@ -1,0 +1,36 @@
+"""
+class Person:
+    def __init__(self, meno):
+        self.meno = meno
+        self.unava = 0
+        self.unavaLimit = 20
+        print(self)
+
+    def beh(self, km):
+        if km > self.unavaLimit - self.unava:
+            print("Nemozes utekat ", km, "km si moc unaveny limit je 20 bodov unavy")
+            return
+        self.unava += km
+        print(self)
+
+    def spanok(self, h):
+        self.unava -= h * 10
+
+        if self.unava < 0:
+            self.unava = 0
+        print(self)
+
+    def __str__(self):
+        return self.meno + " ma unavu: " + str(self.unava)
+"""
+
+class Auto:
+    def __init__(self, spz, farba):
+        self.spz = spz
+        self.farba = farba
+        
+    def zaparkuj(self, garaz):
+        
+        
+class Garaz:
+    def __init__(self):
